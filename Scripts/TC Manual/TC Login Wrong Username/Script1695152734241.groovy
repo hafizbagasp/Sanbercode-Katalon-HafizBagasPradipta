@@ -19,13 +19,19 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('https://demoblaze.com/')
 
+WebUI.setViewPortSize(GlobalVariable.viewportWidth, GlobalVariable.viewportHeight)
+
 WebUI.click(findTestObject('ObjManualSpy/HomepageLogin/btn_home_login'))
 
 WebUI.waitForElementPresent(findTestObject('ObjManualSpy/HomepageLogin/btn_home_login'), 0)
 
 WebUI.setText(findTestObject('ObjManualSpy/HomepageLogin/input_Username_loginusername'), 'wrongusername')
 
-WebUI.setText(findTestObject('ObjManualSpy/HomepageLogin/input_Password_loginpassword'), 'test123')
+WebUI.setText(findTestObject('ObjManualSpy/HomepageLogin/input_Password_loginpassword'), GlobalVariable.globalPassword)
 
 WebUI.click(findTestObject('ObjManualSpy/HomepageLogin/btn_login'))
+
+WebUI.verifyElementPresent(findTestObject('ObjManualSpy/HomepageLogin/assert_homepage_product'), 0)
+
+WebUI.closeBrowser()
 

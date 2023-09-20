@@ -17,11 +17,22 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://demoblaze.com/')
+WebUI.openBrowser(GlobalVariable.baseUrl)
+
+WebUI.setViewPortSize(GlobalVariable.viewportWidth, GlobalVariable.viewportHeight)
 
 WebUI.click(findTestObject('ObjManualSpy/HomepageLogin/btn_home_login'))
 
 WebUI.waitForElementPresent(findTestObject('ObjManualSpy/HomepageLogin/btn_home_login'), 0)
 
+WebUI.setText(findTestObject('ObjManualSpy/HomepageLogin/input_Username_loginusername'), '')
+
+WebUI.setText(findTestObject('ObjManualSpy/HomepageLogin/input_Password_loginpassword'), '')
+
 WebUI.click(findTestObject('ObjManualSpy/HomepageLogin/btn_login'))
+
+// WebUI.verifyAlertPresent(0)
+WebUI.verifyElementPresent(findTestObject('ObjManualSpy/HomepageLogin/assert_homepage_product'), 0)
+
+WebUI.closeBrowser()
 
