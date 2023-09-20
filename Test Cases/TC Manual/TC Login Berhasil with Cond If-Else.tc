@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC Login Berhasil with Cond If-Else</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>be3ed6bf-7f00-43f7-ae1b-29b531bb3fdb</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f13d81ed-53d6-4aba-a26f-d35708f970a7</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f120176b-7cd5-486c-8d33-f6840030f4e6</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ed34e1c0-5ab0-4a3c-995d-f5a9a0ee5bde</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'hafiztest'</defaultValue>
+      <description></description>
+      <id>f13d81ed-53d6-4aba-a26f-d35708f970a7</id>
+      <masked>false</masked>
+      <name>usernameLogin</name>
+   </variable>
+   <variable>
+      <defaultValue>'test123'</defaultValue>
+      <description></description>
+      <id>f120176b-7cd5-486c-8d33-f6840030f4e6</id>
+      <masked>false</masked>
+      <name>passwordLogin</name>
+   </variable>
+   <variable>
+      <defaultValue>20</defaultValue>
+      <description></description>
+      <id>ed34e1c0-5ab0-4a3c-995d-f5a9a0ee5bde</id>
+      <masked>false</masked>
+      <name>fieldMaxLength</name>
+   </variable>
+</TestCaseEntity>
